@@ -1,14 +1,11 @@
 # boyfriendbot
 
-A Clojure library designed to ... well, that part is up to you.
+This program allows you to schedule periodic messages to your girlfriend
 
 ## Usage
 
-FIXME
+Coming soon
 
 ## License
 
-Copyright © 2014 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Do whatever you want with this
