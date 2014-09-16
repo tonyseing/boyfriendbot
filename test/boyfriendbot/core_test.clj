@@ -1,7 +1,9 @@
 (ns boyfriendbot.core-test
   (:require [clojure.test :refer :all]
-            [boyfriendbot.core :refer :all]))
+            [boyfriendbot.message :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
+
+
+(deftest send-message
+  (testing "Should send a message"
     (is (= 0 1))))
