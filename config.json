@@ -1,0 +1,11 @@
+{
+    "messsage": {
+        "from": "8608306959",
+        "to": "8608306959",
+        "body": "this is another test"
+    },
+    "auth" : { 
+        "accountSid" : "ACa1c760ff52e8f43d2ab2df8399ea642d",
+        "auth-token" : "76a7d399a0f9d64e4b84026cc3720943"
+    }
+}

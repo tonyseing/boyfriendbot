@@ -3,12 +3,11 @@
             [cemerick.url :refer (url url-encode)]))
 
 
-(def posturl (str "https://api.twilio.com/2010-04-01/Accounts/" accountSid  "/Messages.json"))
-(def msg  { :Body "clojuretest"  :To "+18608306959" :From "+18603560847"})
-
-(client/post posturl
+(defn send-txt-message [msg auth]
+  (let [accountSid (:accountSid auth)
+        auth-token (:auth-token auth)
+        twilio-url (str "https://api.twilio.com/2010-04-01/Accounts/" accountSid  "/Messages.json")])
+  (client/post posturl
              { :basic-auth [accountSid auth-token]
                :accept :json
-               :form-params msg})
-
-
+               :form-params msg}))
