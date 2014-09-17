@@ -7,4 +7,5 @@
                  [clj-http "1.0.0"]
                  [com.cemerick/url "0.1.1"]
                  [cheshire "5.3.1"]
+                 [im.chit/cronj "1.4.2"]
                  ])
