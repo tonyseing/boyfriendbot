@@ -1,2 +1,4 @@
 *#*
 config.json
+target/
+.nrepl-port
