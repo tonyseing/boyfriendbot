@@ -1,0 +1,27 @@
+{                                                                                                                                                                             
+  "messages": [                                                                                                                                                             
+    {                                                                                                                                                                     
+      "From": "**Your Twilio phone number, starting with + and the country code**",                                                                                                                                           
+      "To" : "**Your recipient's phone number, starting with + and the country code**",                                                                                                                                            
+      "Body": "**Your message body**"
+    },
+    {                                                                                                                                                                     
+      "From": "**Your Twilio phone number, starting with + and the country code**",                                                                                                                                           
+      "To" : "**Your recipient's phone number, starting with + and the country code**",                                                                                                                                            
+      "Body": "**Your message body**"
+    }
+  ],                                                                                                                 
+  "auth" : {                                                                                                                                                                
+    "accountSid" : "**Twilio account Sid**",                                                                                                                  
+    "auth-token" : "**Your Twilio app's auth-token**"
+  },                                                                                                                                                                        
+  "schedule" : "**crontab entry specifying when the schedule for the messages to be sent**"
+}
+
+
+
+
+
+
+
+
