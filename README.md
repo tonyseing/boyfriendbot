@@ -1,11 +1,15 @@
 # boyfriendbot
 
-This program allows you to schedule random, doting messages to your girlfriend
+My girlfriend complains that I don't send her text messages often enough, so I made this program. It allows you to schedule random, doting messages to your girlfriend
 
 ## Usage
+This application uses the Twilio API to send your text messages, so you must have an account there for this program to work.
 Edit the config.json file and replace the messages field with a JSON array
 filled with message objects that contain the **from** phone number, **to**
-phone number, and the **body** for each of the messages in your pool.
+phone number, and the **body** for each of the messages in your pool. Fill in the appropriate fields with your Twilio information.
+
+Then type `lein run` to start the program.
+Type **q** and RETURN to quit the program.
 
 
 ## License
