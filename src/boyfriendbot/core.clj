@@ -19,7 +19,9 @@
         msg  (nth msgs chosen-msg-indx) ]
 
     (message/send-text-message msg auth)
-    (println (str "Message sent: " msg))))
+    (println (str "Message sent: " msg))
+    (println "Press q and *ENTER* to quit")
+    ))
 
 (defn -main
   []
@@ -33,15 +35,19 @@
   
   (def cj (cron/cronj :entries [send-gf-msg-task]))
   
-  (def keep-running (atom true))
+  (def keep-running? (atom true))
+
   
   (cron/start! cj)
-  (println "Boyfriend-Bot has begun. Press q to stop Boyfriend-Bot.")
+  (println "Boyfriend-Bot has begun. Press q and *ENTER* to stop Boyfriend-Bot.")
   
-  (while true
+  (while @keep-running?
     (if (= (read-line) "q")
-      (cron/stop! cj)
-      (println  "Boyfriend-Bot has terminated."))))
+      (do
+        (cron/stop! cj)
+        (reset! keep-running? false)
+        (println  "Boyfriend-Bot has terminated.")
+        (System/exit 0)))))
 
  
 
